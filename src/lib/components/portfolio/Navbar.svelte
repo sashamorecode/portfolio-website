@@ -8,6 +8,9 @@
 	import Button from '$lib/components/ui/button/button.svelte';
 	import { mode } from 'mode-watcher';
 	$: theme = $mode;
+	$: navbarItems = DATA.navbar.filter(
+		(item) => item.href !== '/blog' && item.label.toLowerCase() !== 'blog' && item.href !== '/projects' && item.label.toLowerCase() !== 'projects'
+	);
 </script>
 
 <div
@@ -22,7 +25,7 @@
 		let:distance
 		let:mouseX
 	>
-		{#each DATA.navbar as item}
+		{#each navbarItems as item}
 			<DockIcon {magnification} {mouseX} {distance}>
 				<Tooltip.Root openDelay={300}>
 					<Tooltip.Trigger>

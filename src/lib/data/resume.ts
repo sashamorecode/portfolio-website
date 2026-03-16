@@ -1,4 +1,4 @@
-import { CodeIcon, Github, Globe, HomeIcon, NotebookIcon, Youtube } from 'lucide-svelte';
+import { CodeIcon, Github, Globe, HomeIcon, Youtube } from 'lucide-svelte';
 // Navbar Icons
 import GithubSvg from '$lib/imgs/github.svg';
 import GithubDarkSvg from '$lib/imgs/github-dark.svg';
@@ -56,7 +56,6 @@ export const DATA = {
 	],
 	navbar: [
 		{ href: '/', icon: HomeIcon, label: 'Home' },
-		{ href: '/blog', icon: NotebookIcon, label: 'Blog' },
 		{ href: '#', icon: CodeIcon, label: 'Projects' }
 	],
 	contact: {
