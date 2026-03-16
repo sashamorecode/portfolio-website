@@ -5,12 +5,13 @@
 	import { ChevronRightIcon } from 'lucide-svelte';
 	import { quartOut } from 'svelte/easing';
 	import { slide } from 'svelte/transition';
+	import { marked } from 'marked'
 	export let logoUrl: string = '';
 	export let company: string = '';
 	export let title: string = '';
 	export let subtitle: string = '';
 	export let href: string = '';
-	export let badges: string[]=[''];
+	export let badges: string[] = [''];
 	export let description: string = '';
 	export let start: string = '';
 	export let end: string = '';
@@ -18,13 +19,14 @@
 
 	let handleClick = (e: MouseEvent) => {
 		if (description) {
-			e.preventDefault();
 			isExpanded = !isExpanded;
 		}
 	};
 </script>
 
-<a href={href || '#'} on:click={handleClick}>
+<!-- svelte-ignore a11y-click-events-have-key-events -->
+<!-- svelte-ignore a11y-no-static-element-interactions -->
+<div on:click={handleClick}>
 	<div class="flex rounded-lg bg-card text-card-foreground">
 		<div class="flex-none">
 			<Avatar.Root class="bg-muted-background m-auto size-12 border dark:bg-foreground">
@@ -72,10 +74,10 @@
 							easing: quartOut
 						}}
 					>
-						{description}
+						{@html marked(description + `${href ? ` [&#8599;](${href})` : ''}`)}
 					</div>
 				{/if}
 			{/if}
 		</div>
 	</div>
-</a>
+</div>

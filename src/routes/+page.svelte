@@ -41,11 +41,10 @@
 					<BlurFade
 						delay={BLUR_FADE_DELAY}
 						class="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
-						yOffset={8}>Hi, I'm Bhide 👋</BlurFade
+						yOffset={8}>Hi, I'm Sasha👋</BlurFade
 					>
 					<BlurFade class="max-w-[600px] md:text-xl" delay={BLUR_FADE_DELAY}
-						>Software Engineer turned Entrepreneur. I love building things and helping people. Very
-						active on Twitter.</BlurFade
+						>Web Developer and Computer Science Student, building things that help people.</BlurFade
 					>
 				</div>
 				<BlurFade delay={BLUR_FADE_DELAY}>
@@ -96,6 +95,7 @@
 						subtitle={edu.degree}
 						start={edu.start}
 						end={edu.end}
+						description={edu.description}
 					/>
 				</BlurFade>
 			{/each}
@@ -115,7 +115,7 @@
 			</div>
 		</div>
 	</section>
-	<section id="projects">
+	<!-- section id="projects">
 		<div class="w-full space-y-12 py-12">
 			<BlurFade delay={BLUR_FADE_DELAY}>
 				<div class="flex flex-col items-center justify-center space-y-4 text-center">
@@ -152,8 +152,8 @@
 				{/each}
 			</div>
 		</div>
-	</section>
-	<section id="hackathons">
+	</section -->
+	<!-- section id="hackathons">
 		<div class="w-full space-y-12 py-12">
 			<BlurFade delay={BLUR_FADE_DELAY}>
 				<div class="flex flex-col items-center justify-center space-y-4 text-center">
@@ -184,7 +184,7 @@
 				</ul>
 			</BlurFade>
 		</div>
-	</section>
+	</section -->
 	<section id="contact">
 		<div class="grid w-full items-center justify-center gap-4 px-4 py-12 text-center md:px-6">
 			<BlurFade delay={BLUR_FADE_DELAY * 2}>
@@ -196,11 +196,11 @@
 					<p
 						class="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
 					>
-						Want to chat? Just shoot me a dm
-						<a href={DATA.contact.social.X.url} class="text-blue-500 hover:underline">
-							with a direct question on twitter
+						Want to chat? Just shoot me an
+						<a href={`mailto:${DATA.contact.social.email}`} class="text-blue-500 hover:underline">
+                            email
 						</a>
-						and I&apos;ll respond whenever I can. I will ignore all soliciting.
+						and I&apos;ll respond whenever I can.
 					</p>
 				</div>
 			</BlurFade>
