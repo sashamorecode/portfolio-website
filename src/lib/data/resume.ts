@@ -37,7 +37,8 @@ export const DATA = {
 	location: 'Aachen, Germany',
 	locationLink: 'https://www.google.com/maps/place/aachen',
 	description:
-		'Software Developer and Computer Science Student. I love building things that help people.',
+		'Software Developer and Computer Science Student.',
+    subDescription: 'I love building things that help people.',
 	summary:
 		'Since Oct 2025 I have been working on at [HumanityLink](https://www.humanity.link/about-us/) where I am developing a AI-enabled SAAS platform for client-outreach through WhatsApp and SMS. In the meantime im completing my BSc at [RWTH](https://www.rwth-aachen.de/cms/root/studium/vor-dem-studium/studiengaenge/liste-aktuelle-studiengaenge/studiengangbeschreibung/~bnzs/informatik-b-sc-/?lidx=1).',
 	avatarUrl: '/Portrait.jpg',

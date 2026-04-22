@@ -44,7 +44,9 @@
 						yOffset={8}>Hi, I'm Sasha👋</BlurFade
 					>
 					<BlurFade class="max-w-[600px] md:text-xl" delay={BLUR_FADE_DELAY}
-						>Web Developer and Computer Science Student, building things that help people.</BlurFade
+						>
+                        <div class="text-muted-foreground">{DATA.description}</div>
+                        <div class="text-pretty">{DATA.subDescription}</div></BlurFade
 					>
 				</div>
 				<BlurFade delay={BLUR_FADE_DELAY}>

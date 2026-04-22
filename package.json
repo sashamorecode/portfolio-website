@@ -39,7 +39,9 @@
 	"type": "module",
 	"dependencies": {
 		"@sveltejs/adapter-node": "^5.5.4",
+		"baseline-browser-mapping": "^2.10.20",
 		"bits-ui": "^0.21.12",
+		"caniuse-lite": "^1.0.30001790",
 		"class-variance-authority": "^0.7.0",
 		"clsx": "^2.1.1",
 		"lucide-svelte": "^0.414.0",
