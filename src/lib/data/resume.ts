@@ -40,19 +40,22 @@ export const DATA = {
 		'Software Developer and Computer Science Student. I love building things that help people.',
 	summary:
 		'Since Oct 2025 I have been working on at [HumanityLink](https://www.humanity.link/about-us/) where I am developing a AI-enabled SAAS platform for client-outreach through WhatsApp and SMS. In the meantime im completing my BSc at [RWTH](https://www.rwth-aachen.de/cms/root/studium/vor-dem-studium/studiengaenge/liste-aktuelle-studiengaenge/studiengangbeschreibung/~bnzs/informatik-b-sc-/?lidx=1).',
-	avatarUrl:
-		'https://media.licdn.com/dms/image/v2/D4E03AQGPgTTJSz6DNQ/profile-displayphoto-shrink_800_800/B4EZW.WuMNHgAg-/0/1742655382824?e=1768435200&v=beta&t=LXc6mAsJrXTjvIijX3uqNHVEcX8GtJV13_CZKPv6bkM',
+	avatarUrl: '/Portrait.jpg',
 	skills: [
 		'Typescript',
 		'Python',
 		'Go',
+		'Kubernetes',
+		'Docker',
+		'GCP',
+        'Terraform',
 		'Node.js',
 		'Express',
-		'Docker',
-		'Kubernetes',
-		'GCP',
+        'Vault',
+		'Twilio',
 		'EspoCRM',
-		'Twilio'
+        'Monday.com',
+        'ElevenLabs'
 	],
 	navbar: [
 		{ href: '/', icon: HomeIcon, label: 'Home' },
@@ -94,7 +97,7 @@ export const DATA = {
 			href: 'https://humanity.link/',
 			badges: [],
 			location: 'Remote',
-			title: 'Web Development Intern',
+			title: 'Junior Software Developmer',
 			logoUrl: HumanityLink,
 			start: 'Oct 2025',
 			description:
