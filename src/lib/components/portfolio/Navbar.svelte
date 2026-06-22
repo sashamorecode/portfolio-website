@@ -1,15 +1,21 @@
 <script lang="ts">
-	import { DATA } from '$lib/data/resume';
+	import { data } from '$lib/data/resume';
 	import Dock from '../magic/Dock.svelte';
 	import DockIcon from '../magic/DockIcon.svelte';
 	import * as Tooltip from '$lib/components/ui/tooltip';
 	import Separator from '$lib/components/ui/separator/separator.svelte';
 	import ModeToggle from './ModeToggle.svelte';
+	import LocaleToggle from './LocaleToggle.svelte';
 	import Button from '$lib/components/ui/button/button.svelte';
 	import { mode } from 'mode-watcher';
+	import { t } from '$lib/i18n';
 	$: theme = $mode;
-	$: navbarItems = DATA.navbar.filter(
-		(item) => item.href !== '/blog' && item.label.toLowerCase() !== 'blog' && item.href !== '/projects' && item.label.toLowerCase() !== 'projects'
+	$: navbarItems = $data.navbar.filter(
+		(item) =>
+			item.href !== '/blog' &&
+			item.label.toLowerCase() !== 'blog' &&
+			item.href !== '/projects' &&
+			item.label.toLowerCase() !== 'projects'
 	);
 </script>
 
@@ -41,7 +47,7 @@
 			</DockIcon>
 		{/each}
 		<Separator orientation="vertical" class="h-full" />
-		{#each Object.entries(DATA.contact.social)
+		{#each Object.entries($data.contact.social)
 			.filter(([_, social]) => social.navbar)
 			.map(([_, social]) => social) as social}
 			<DockIcon {magnification} {mouseX} {distance}>
@@ -69,7 +75,17 @@
 					<ModeToggle />
 				</Tooltip.Trigger>
 				<Tooltip.Content>
-					<p>Theme</p>
+					<p>{$t.tooltip.theme}</p>
+				</Tooltip.Content>
+			</Tooltip.Root>
+		</DockIcon>
+		<DockIcon {magnification} {mouseX} {distance}>
+			<Tooltip.Root openDelay={300}>
+				<Tooltip.Trigger>
+					<LocaleToggle />
+				</Tooltip.Trigger>
+				<Tooltip.Content>
+					<p>{$t.tooltip.language}</p>
 				</Tooltip.Content>
 			</Tooltip.Root>
 		</DockIcon>

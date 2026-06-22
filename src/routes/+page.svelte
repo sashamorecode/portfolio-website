@@ -5,30 +5,31 @@
 	import ResumeCard from '$lib/components/portfolio/ResumeCard.svelte';
 	import * as Avatar from '$lib/components/ui/avatar';
 	import Badge from '$lib/components/ui/badge/badge.svelte';
-	import { DATA } from '$lib/data/resume';
+	import { data } from '$lib/data/resume';
+	import { t, locale } from '$lib/i18n';
 	import { marked } from 'marked';
 	let BLUR_FADE_DELAY = 0.04;
 </script>
 
 <svelte:head>
-	<title>{DATA.name}</title>
-	<meta name="description" content={DATA.description} />
-	<meta property="og:title" content={DATA.name} />
-	<meta property="og:description" content={DATA.description} />
-	<meta property="og:url" content={DATA.url} />
-	<meta property="og:site_name" content={DATA.name} />
-	<meta property="og:image" content={DATA.img} />
-	<meta property="og:locale" content="en_US" />
+	<title>{$data.name}</title>
+	<meta name="description" content={$data.description} />
+	<meta property="og:title" content={$data.name} />
+	<meta property="og:description" content={$data.description} />
+	<meta property="og:url" content={$data.url} />
+	<meta property="og:site_name" content={$data.name} />
+	<meta property="og:image" content={$data.img} />
+	<meta property="og:locale" content={$locale === 'de' ? 'de_DE' : 'en_US'} />
 	<meta property="og:type" content="website" />
 	<meta name="robots" content="index, follow" />
 	<meta
 		name="googlebot"
 		content="index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
 	/>
-	<meta name="twitter:title" content={DATA.name} />
+	<meta name="twitter:title" content={$data.name} />
 	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:image" content={DATA.img} />
-	<meta name="twitter:description" content={DATA.description} />
+	<meta name="twitter:image" content={$data.img} />
+	<meta name="twitter:description" content={$data.description} />
 
 	<meta name="google-site-verification" content="your-google-verification-code" />
 	<meta name="yandex-verification" content="your-yandex-verification-code" />
@@ -41,18 +42,17 @@
 					<BlurFade
 						delay={BLUR_FADE_DELAY}
 						class="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
-						yOffset={8}>Hi, I'm Sasha👋</BlurFade
+						yOffset={8}>{$t.hero.greeting}</BlurFade
 					>
-					<BlurFade class="max-w-[600px] md:text-xl" delay={BLUR_FADE_DELAY}
-						>
-                        <div class="text-muted-foreground">{DATA.description}</div>
-                        <div class="text-pretty">{DATA.subDescription}</div></BlurFade
+					<BlurFade class="max-w-[600px] md:text-xl" delay={BLUR_FADE_DELAY}>
+						<div class="text-muted-foreground">{$data.description}</div>
+						<div class="text-pretty">{$data.subDescription}</div></BlurFade
 					>
 				</div>
 				<BlurFade delay={BLUR_FADE_DELAY}>
 					<Avatar.Root class="size-28 border">
-						<Avatar.Image alt={DATA.name} src={DATA.avatarUrl} />
-						<Avatar.Fallback>{DATA.initials}</Avatar.Fallback>
+						<Avatar.Image alt={$data.name} src={$data.avatarUrl} />
+						<Avatar.Fallback>{$data.initials}</Avatar.Fallback>
 					</Avatar.Root>
 				</BlurFade>
 			</div>
@@ -60,22 +60,22 @@
 	</section>
 	<section id="about">
 		<BlurFade delay={BLUR_FADE_DELAY}>
-			<h2 class="text-xl font-bold">About</h2>
+			<h2 class="text-xl font-bold">{$t.sections.about}</h2>
 		</BlurFade>
 		<BlurFade delay={BLUR_FADE_DELAY * 1.4}>
 			<div
 				class="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert"
 			>
-				{@html marked(DATA.summary)}
+				{@html marked($data.summary)}
 			</div>
 		</BlurFade>
 	</section>
 	<section id="work">
 		<div class="flex min-h-0 flex-col gap-y-3">
 			<BlurFade delay={BLUR_FADE_DELAY}>
-				<h2 class="text-xl font-bold">Work Experience</h2>
+				<h2 class="text-xl font-bold">{$t.sections.work}</h2>
 			</BlurFade>
-			{#each DATA.work as work, id}
+			{#each $data.work as work, id}
 				<BlurFade delay={BLUR_FADE_DELAY * 1.2 + id * 0.05}>
 					<ResumeCard {...work} />
 				</BlurFade>
@@ -85,9 +85,9 @@
 	<section id="education">
 		<div class="flex min-h-0 flex-col gap-y-3">
 			<BlurFade delay={BLUR_FADE_DELAY}>
-				<h2 class="text-xl font-bold">Education</h2>
+				<h2 class="text-xl font-bold">{$t.sections.education}</h2>
 			</BlurFade>
-			{#each DATA.education as edu, id}
+			{#each $data.education as edu, id}
 				<BlurFade delay={BLUR_FADE_DELAY * 1.2 + id * 0.05}>
 					<ResumeCard
 						href={edu.href}
@@ -106,10 +106,10 @@
 	<section id="skills">
 		<div class="flex min-h-0 flex-col gap-y-3">
 			<BlurFade delay={BLUR_FADE_DELAY}>
-				<h2 class="text-xl font-bold">Skills</h2>
+				<h2 class="text-xl font-bold">{$t.sections.skills}</h2>
 			</BlurFade>
 			<div class="flex flex-wrap gap-1">
-				{#each DATA.skills as skill, id}
+				{#each $data.skills as skill, id}
 					<BlurFade delay={BLUR_FADE_DELAY * id + 0.002}>
 						<Badge>{skill}</Badge>
 					</BlurFade>
@@ -192,17 +192,17 @@
 			<BlurFade delay={BLUR_FADE_DELAY * 2}>
 				<div class="space-y-3">
 					<div class="inline-block rounded-lg bg-foreground px-3 py-1 text-sm text-background">
-						Contact
+						{$t.sections.contact}
 					</div>
-					<h2 class="text-3xl font-bold tracking-tight sm:text-5xl">Get in Touch</h2>
+					<h2 class="text-3xl font-bold tracking-tight sm:text-5xl">{$t.contact.heading}</h2>
 					<p
 						class="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
 					>
-						Want to chat? Just shoot me an
-						<a href={`mailto:${DATA.contact.social.email}`} class="text-blue-500 hover:underline">
-                            email
+						{$t.contact.lead}
+						<a href={`mailto:${$data.contact.email}`} class="text-blue-500 hover:underline">
+							{$t.contact.emailWord}
 						</a>
-						and I&apos;ll respond whenever I can.
+						{$t.contact.tail}
 					</p>
 				</div>
 			</BlurFade>

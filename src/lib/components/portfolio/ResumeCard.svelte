@@ -5,7 +5,8 @@
 	import { ChevronRightIcon } from 'lucide-svelte';
 	import { quartOut } from 'svelte/easing';
 	import { slide } from 'svelte/transition';
-	import { marked } from 'marked'
+	import { marked } from 'marked';
+	import { t } from '$lib/i18n';
 	export let logoUrl: string = '';
 	export let company: string = '';
 	export let title: string = '';
@@ -58,7 +59,7 @@
 						/>
 					</h3>
 					<div class="text-right text-xs tabular-nums text-muted-foreground sm:text-sm">
-						{start} - {end || 'Present'}
+						{start} - {end || $t.resume.present}
 					</div>
 				</div>
 				{#if title}
