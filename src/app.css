@@ -2,6 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Self-hosted Inter (variable) — served locally for GDPR compliance, no third-party request */
+@font-face {
+	font-family: 'Inter var';
+	font-style: normal;
+	font-weight: 100 900;
+	font-display: swap;
+	src: url('/fonts/InterVariable.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'Inter var';
+	font-style: italic;
+	font-weight: 100 900;
+	font-display: swap;
+	src: url('/fonts/InterVariable-Italic.woff2') format('woff2');
+}
+@font-face {
+	font-family: InterVariable;
+	font-style: normal;
+	font-weight: 100 900;
+	font-display: swap;
+	src: url('/fonts/InterVariable.woff2') format('woff2');
+}
+@font-face {
+	font-family: InterVariable;
+	font-style: italic;
+	font-weight: 100 900;
+	font-display: swap;
+	src: url('/fonts/InterVariable-Italic.woff2') format('woff2');
+}
+
 @layer base {
 	:root {
 		--background: 0 0% 100%;
@@ -56,5 +86,3 @@
 		@apply bg-background text-foreground;
 	}
 }
-
-
