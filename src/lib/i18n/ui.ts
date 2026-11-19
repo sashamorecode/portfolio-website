@@ -18,6 +18,11 @@ const en = {
 		emailWord: 'email',
 		tail: "and I'll respond whenever I can."
 	},
+	projects: {
+		badge: 'My Projects',
+		heading: "Things I've built",
+		lead: 'Production systems built at HumanityLink, from NGO outreach over SMS and WhatsApp to climate advisories for smallholder farmers.'
+	},
 	resume: {
 		present: 'Present'
 	},
@@ -47,6 +52,11 @@ const de: typeof en = {
 		lead: 'Lust auf einen Austausch? Schreib mir einfach eine',
 		emailWord: 'E-Mail',
 		tail: 'und ich melde mich, sobald ich kann.'
+	},
+	projects: {
+		badge: 'Meine Projekte',
+		heading: 'Was ich gebaut habe',
+		lead: 'Produktionssysteme, die ich bei HumanityLink gebaut habe – von NGO-Kontakt über SMS und WhatsApp bis zu Klimaberatung für Kleinbauern.'
 	},
 	resume: {
 		present: 'Heute'

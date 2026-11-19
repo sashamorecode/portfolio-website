@@ -57,19 +57,35 @@ export function getData(l: Locale) {
 		),
 		avatarUrl: '/Portrait.jpg',
 		skills: [
-			'Typescript',
+			'TypeScript',
 			'Python',
 			'Go',
+			'Node.js',
+			'Express',
+			'React',
+			'SolidJS',
+			'PostgreSQL',
+			'Drizzle',
+			'Redis',
 			'Kubernetes',
 			'Docker',
 			'GCP',
 			'Terraform',
-			'Node.js',
-			'Express',
-			'Vault',
+			'Cloud Run',
 			'Twilio',
 			'EspoCRM',
 			'Monday.com',
+			'SendGrid',
+			'RabbitMQ',
+			'BullMQ',
+			'Vault',
+			'LangChain',
+			'Google Gemini',
+			'Vertex AI',
+			'BigQuery',
+			'Earth Engine',
+			'Firestore',
+			'Playwright',
 			'ElevenLabs'
 		],
 		navbar: [
@@ -111,12 +127,12 @@ export function getData(l: Locale) {
 				href: 'https://humanity.link/',
 				badges: [],
 				location: 'Remote',
-				title: tr('Junior Software Developmer', 'Junior-Softwareentwickler'),
+				title: tr('Software Developer', 'Softwareentwickler'),
 				logoUrl: HumanityLink,
 				start: tr('Oct 2025', 'Okt. 2025'),
 				description: tr(
-					"*Implemented* a multi-tenant **SAAS** platform that *enables* **NGO's** to reach out to their clients over **SMS** or **WhatsApp**. *instumentalized* **[EspoCRM](https://www.espocrm.com/)** to act as a frontend for a **Express** backend that *utilized* the **Twilio** platform to do batch messaging and surveys. I was also in charge of *deploying* the solution to **GCP** using **Kubernetes** and **Docker**.",
-					'*Implementierte* eine mandantenfähige **SaaS**-Plattform, die es **NGOs** *ermöglicht*, ihre Klienten über **SMS** oder **WhatsApp** zu erreichen. *Setzte* **[EspoCRM](https://www.espocrm.com/)** als Frontend für ein **Express**-Backend ein, das die **Twilio**-Plattform für Massennachrichten und Umfragen nutzte. Außerdem war ich für das *Deployment* der Lösung auf **GCP** mit **Kubernetes** und **Docker** verantwortlich.'
+					"*Building* the **EmpowerLink** platform, a family of products for NGO client outreach. *Implemented* a multi-tenant **SaaS** for **SMS** and **WhatsApp** outreach with **voice surveys** over TwiML, an **[EspoCRM](https://www.espocrm.com/)** frontend, and an **Express** backend driven by **Twilio**. *Deployed* to **GCP** (GKE) with **Kubernetes**, **Docker**, and **Terraform**, using **BullMQ**/**RabbitMQ** queues and **Vault**.",
+					"*Baue* die **EmpowerLink**-Plattform, eine Produktfamilie für die Kundenansprache von NGOs. *Implementierte* eine mandantenfähige **SaaS** für **SMS**- und **WhatsApp**-Kontakt mit **Sprachumfragen** über TwiML, einem **[EspoCRM](https://www.espocrm.com/)**-Frontend und einem **Express**-Backend auf Basis von **Twilio**. *Verantwortlich für das Deployment* auf **GCP** (GKE) mit **Kubernetes**, **Docker** und **Terraform**, unter Einsatz von **BullMQ**/**RabbitMQ**-Queues und **Vault**."
 				)
 			},
 			{
@@ -217,129 +233,94 @@ export function getData(l: Locale) {
 		],
 		projects: [
 			{
-				title: 'Chat Collect',
-				href: 'https://chatcollect.com',
-				dates: 'Jan 2024 - Feb 2024',
+				title: 'ANCHOR for Farmers',
+				href: 'https://humanity.link/',
+				dates: '2026 - Present',
 				active: true,
 				description:
-					'With the release of the [OpenAI GPT Store](https://openai.com/blog/introducing-the-gpt-store), I decided to build a SaaS which allows users to collect email addresses from their GPT users. This is a great way to build an audience and monetize your GPT API usage.',
+					'A community-facing climate advisory for smallholder farmers in Honduras, delivered over WhatsApp in Spanish. Turns free satellite and forecast data plus a farmer\'s location, crop, and sowing date into planting, drought, and canícula guidance. Funded by Irish Aid for GOAL Honduras.',
 				technologies: [
-					'Next.js',
-					'Typescript',
-					'PostgreSQL',
-					'Prisma',
-					'TailwindCSS',
-					'Stripe',
-					'Shadcn UI',
-					'Magic UI'
+					'TypeScript',
+					'Python',
+					'Google Gemini',
+					'Vertex AI',
+					'Twilio',
+					'Monday.com',
+					'BigQuery',
+					'Earth Engine',
+					'Cloud Run',
+					'Firestore'
 				],
-				links: [
-					{
-						type: 'Website',
-						href: 'https://chatcollect.com',
-						// icon: <Icons.globe className="size-3" />,
-						icon: Globe
-					}
-				],
+				links: [],
 				image: '',
-				video: 'https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4'
+				video: ''
 			},
 			{
-				title: 'Magic UI',
-				href: 'https://magicui.design',
-				dates: 'June 2023 - Present',
-				active: true,
-				description: 'Designed, developed and sold animated UI components for developers.',
-				technologies: [
-					'Next.js',
-					'Typescript',
-					'PostgreSQL',
-					'Prisma',
-					'TailwindCSS',
-					'Stripe',
-					'Shadcn UI',
-					'Magic UI'
-				],
-				links: [
-					{
-						type: 'Website',
-						href: 'https://magicui.design',
-						// icon: <Icons.globe className="size-3" />,
-						icon: Globe
-					},
-					{
-						type: 'Source',
-						href: 'https://github.com/magicuidesign/magicui',
-						icon: Github
-						// icon: <Icons.github className="size-3" />,
-					}
-				],
-				image: '',
-				video: 'https://cdn.magicui.design/bento-grid.mp4'
-			},
-			{
-				title: 'llm.report',
-				href: 'https://llm.report',
-				dates: 'April 2023 - September 2023',
+				title: 'Share & Listen',
+				href: 'https://humanity.link/',
+				dates: '2026 - Present',
 				active: true,
 				description:
-					'Developed an open-source logging and analytics platform for OpenAI: Log your ChatGPT API requests, analyze costs, and improve your prompts.',
+					'A monday.com app for conversational outreach over SMS, WhatsApp, and RCS. Survey mode guides recipients through a questionnaire with an AI assistant; Decide mode runs a source-grounded assistant (RAG) that can hand off into a survey.',
 				technologies: [
-					'Next.js',
-					'Typescript',
-					'PostgreSQL',
-					'Prisma',
-					'TailwindCSS',
-					'Shadcn UI',
-					'Magic UI',
-					'Stripe',
-					'Cloudflare Workers'
+					'React',
+					'TypeScript',
+					'Node.js',
+					'Express',
+					'Twilio',
+					'SendGrid',
+					'LangChain',
+					'Google Gemini',
+					'Monday.com'
 				],
-				links: [
-					{
-						type: 'Website',
-						href: 'https://llm.report',
-						icon: Globe
-						// icon: <Icons.globe className="size-3" />,
-					},
-					{
-						type: 'Source',
-						href: 'https://github.com/dillionverma/llm.report',
-						icon: Github
-						// icon: <Icons.github className="size-3" />,
-					}
-				],
+				links: [],
 				image: '',
-				video: 'https://cdn.llm.report/openai-demo.mp4'
+				video: ''
 			},
 			{
-				title: 'Automatic Chat',
-				href: 'https://automatic.chat',
-				dates: 'April 2023 - March 2024',
+				title: 'EmpowerLink Unified',
+				href: 'https://humanity.link/',
+				dates: '2026 - Present',
 				active: true,
 				description:
-					'Developed an AI Customer Support Chatbot which automatically responds to customer support tickets using the latest GPT models.',
+					'A CRM-agnostic communications and survey platform. PostgreSQL + Drizzle is the system of record with row-level-security multi-tenancy, 16 domain modules behind ports-and-adapters boundaries, outbox and queues, and OpenAPI-generated clients. In progress.',
 				technologies: [
-					'Next.js',
-					'Typescript',
+					'TypeScript',
+					'SolidJS',
 					'PostgreSQL',
-					'Prisma',
-					'TailwindCSS',
-					'Shadcn UI',
-					'Magic UI',
-					'Stripe',
-					'Cloudflare Workers'
+					'Drizzle',
+					'RabbitMQ',
+					'BullMQ',
+					'Terraform',
+					'Playwright'
 				],
-				links: [
-					{
-						type: 'Website',
-						href: 'https://automatic.chat',
-						icon: Globe
-						// icon: <Icons.globe className="size-3" />,
-					}
-				],
+				links: [],
 				image: '',
-				video: 'https://pub-83c5db439b40468498f97946200806f7.r2.dev/automatic-chat.mp4'
+				video: ''
+			},
+			{
+				title: 'EmpowerLink (SAAS)',
+				href: 'https://humanity.link/',
+				dates: 'Oct 2025 - Present',
+				active: true,
+				description:
+					'The core SaaS of the EmpowerLink product family: Express Core and Email APIs, an EspoCRM extension, Twilio Flex and Studio flows, and voice surveys over TwiML. Deployed to GKE via Terraform and Cloud Build.',
+				technologies: [
+					'TypeScript',
+					'Node.js',
+					'Express',
+					'Twilio',
+					'EspoCRM',
+					'Kubernetes',
+					'GKE',
+					'Terraform',
+					'Vault',
+					'RabbitMQ',
+					'SendGrid'
+				],
+				links: [],
+				image: '',
+				video: ''
 			}
 		],
 		hackathons: [

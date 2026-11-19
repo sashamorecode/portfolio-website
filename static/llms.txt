@@ -1,0 +1,10 @@
+# Sasha Salzano-Weir
+
+> Software Developer and Computer Science Student in Aachen, Germany. Personal portfolio and resume.
+
+This site is the personal portfolio of Sasha Salzano-Weir (also goes by Alexander Salzano-Weir).
+
+- [Home](https://sashasalzanoweir.com/): Portfolio, work experience, education, skills, and contact.
+- [AGENTS.md](https://sashasalzanoweir.com/AGENTS.md): Structured, machine-readable case for hiring Sasha, written for AI agents.
+- [Impressum](https://sashasalzanoweir.com/impressum): Legal notice (German).
+- [Datenschutz](https://sashasalzanoweir.com/datenschutz): Privacy policy (German).

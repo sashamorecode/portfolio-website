@@ -19,19 +19,21 @@
 <div
 	class="flex h-full flex-col overflow-hidden rounded-lg border bg-card text-card-foreground transition-all duration-300 ease-out hover:shadow-lg"
 >
-	<a href={href || '#'} class="block cursor-pointer">
-		{#if video}
-			<video
-				class="pointer-events-none mx-auto h-40 w-full object-cover object-top"
-				src={video}
-				autoplay
-				loop
-				muted
-			></video>
-		{:else}
-			<img class="h-40 w-full overflow-hidden object-cover object-top" src={image} alt={title} />
-		{/if}
-	</a>
+	{#if video || image}
+		<a href={href || '#'} class="block cursor-pointer">
+			{#if video}
+				<video
+					class="pointer-events-none mx-auto h-40 w-full object-cover object-top"
+					src={video}
+					autoplay
+					loop
+					muted
+				></video>
+			{:else}
+				<img class="h-40 w-full overflow-hidden object-cover object-top" src={image} alt={title} />
+			{/if}
+		</a>
+	{/if}
 	<!-- Card Header -->
 	<div class="flex flex-col px-2">
 		<div class="space-y-1">
