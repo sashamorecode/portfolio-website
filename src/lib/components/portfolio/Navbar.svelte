@@ -35,7 +35,13 @@
 			<DockIcon {magnification} {mouseX} {distance}>
 				<Tooltip.Root openDelay={300}>
 					<Tooltip.Trigger>
-						<Button href={item.href} variant="ghost" size="icon" class="size-12 rounded-full">
+						<Button
+							href={item.href}
+							data-sveltekit-reload
+							variant="ghost"
+							size="icon"
+							class="size-12 rounded-full"
+						>
 							<!-- <item.icon class="size-4" /> -->
 							<svelte:component this={item.icon} class="size-[18px]" strokeWidth={1.5} />
 						</Button>

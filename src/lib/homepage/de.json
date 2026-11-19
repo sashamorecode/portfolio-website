@@ -1,0 +1,158 @@
+{
+	"title": "Sasha Salzano-Weir",
+	"description": "Ausbildung, Berufserfahrung und Softwareprojekte von Sasha Salzano-Weir, Informatikstudent an der RWTH Aachen und Softwareentwickler bei HumanityLink.",
+	"skip": "Zum Inhalt springen",
+	"nav_label": "Auf dieser Seite",
+	"education_heading": "Ausbildung",
+	"work_nav": "Berufserfahrung",
+	"work_heading": "Berufserfahrung",
+	"projects_heading": "Projekte",
+	"language_label": "English",
+	"dark": "Dunkelmodus",
+	"light": "Hellmodus",
+	"pause_motion": "Animation anhalten",
+	"play_motion": "Animation abspielen",
+	"to_top": "Nach oben",
+	"intro": "Ich studiere Informatik an der <a href=\"#education\">RWTH Aachen</a> und entwickle Software bei <a href=\"https://www.humanity.link/about-us/\">HumanityLink</a>. Dort arbeite ich hauptsächlich an EmpowerLink. Humanitäre Organisationen können damit Nachrichten verschicken und Menschen telefonisch befragen.",
+	"schools": [
+		{
+			"name": "RWTH Aachen",
+			"degree": "B.Sc. Informatik",
+			"period": "Seit 2022 · Aachen, Deutschland",
+			"detail": "Meine Schwerpunkte sind Systemdesign, Hochleistungsrechnen und maschinelles Lernen.",
+			"href": "https://sc.informatik.rwth-aachen.de/de/studium/bachelor/informatik/"
+		},
+		{
+			"name": "UWC Red Cross Nordic",
+			"degree": "International Baccalaureate",
+			"period": "Aug. 2020 – Apr. 2022 · Flekke, Norwegen",
+			"detail": "Meine Higher-Level-Fächer waren Mathematik, Physik und Wirtschaft. Neben dem IB habe ich bereits <a href=\"https://github.com/sashamorecode/RWTH-Programierung\">Programmieraufgaben der RWTH</a> bearbeitet.",
+			"href": "https://www.uwcrcn.no/"
+		}
+	],
+	"jobs": [
+		{
+			"id": "humanitylink",
+			"name": "HumanityLink",
+			"role": "Softwareentwickler",
+			"period": "Seit Okt. 2025",
+			"detail": "Ich habe die Werkzeuge für SMS und WhatsApp entwickelt, mit denen NGOs Menschen erreichen, und telefonische Umfragen in TwiML geschrieben. Das Backend verbindet Express, EspoCRM und Twilio. Mit Terraform stelle ich die Dienste auf Google Kubernetes Engine bereit. <a href=\"#platform-projects\">Projekte bei HumanityLink</a>"
+		},
+		{
+			"id": "private-client",
+			"name": "Privatkunde",
+			"role": "Webentwickler",
+			"period": "Sept. 2025 – Okt. 2025",
+			"detail": "Das <a href=\"https://jonasschledorn.com/\">Fotografieportfolio von Jonas Schledorn</a> habe ich mit SvelteKit gebaut und auf einem virtuellen Server bereitgestellt. Als Reverse Proxy läuft dort Nginx."
+		},
+		{
+			"id": "der-takt",
+			"name": "Der TAkt",
+			"role": "Softwareentwickler für Augmented Reality",
+			"period": "Aug. 2023 – Jan. 2024",
+			"detail": "Der TAkt wollte AR-Bildschirme im öffentlichen Raum einsetzen, um Rückmeldungen von Anwohnern zu sammeln. Ich habe den Browser-Prototyp mit A-Frame entwickelt, Deployments über GitHub Actions eingerichtet und ein Live-Dashboard für die Umfrage gebaut. Das Team <a href=\"https://www.aachen.digital/news/smart-city-ideenwettbewerb-das-grosse-finale-und-die-sieger/\">gewann 10.000 Euro beim Aachener Smart-City-Ideenwettbewerb</a>."
+		},
+		{
+			"id": "wzl",
+			"name": "Werkzeugmaschinenlabor WZL",
+			"role": "Praktikum · RWTH Aachen",
+			"period": "Feb. 2022 – Juni 2022",
+			"detail": "Mit einem Regressionsmodell habe ich eine virtuelle CNC-Fräse nachgebildet, um einen Regler mit Reinforcement Learning zu testen. Nach einem Vergleich verschiedener Ansätze habe ich einen Prototyp mit Proximal Policy Optimization entwickelt und die Ergebnisse im Labor vorgestellt."
+		},
+		{
+			"id": "beyond-communications",
+			"name": "Beyond Communications",
+			"role": "Systemadministrator",
+			"period": "Aug. 2021 – Juli 2023",
+			"detail": "Bei <a href=\"https://beyond-communications.com/\">Beyond</a> habe ich Netzwerke und Geräte überwacht, Serverstörungen behoben und technischen Support geleistet. Außerdem habe ich die Kompatibilität neuer Software geprüft und Upgrades dokumentiert."
+		},
+		{
+			"id": "aquaculture",
+			"name": "Startup für Aquakultur-Automatisierung",
+			"role": "Praktikum im Bereich Data Science",
+			"period": "Mai 2021 – Juli 2021",
+			"detail": "Mit Keras habe ich eine Bildsegmentierung entwickelt, die Fische in Aufnahmen erkennt. Die Datensätze habe ich mit Python und Bash bereinigt und mit Pandas und Seaborn untersucht."
+		}
+	],
+	"processor_alt": "Oberfläche von waveProcessor mit drei Waveshapern und ihren Übertragungskennlinien.",
+	"synth_description": "ist ein polyphoner Wavetable-Synthesizer, den ich in C++ mit JUCE geschrieben habe. Er unterstützt Resampling, Downsampling und zwei Arten von Verzerrung.",
+	"processor": "ist ein Waveshaping-Plug-in, das ich mit iPlug2 entwickelt habe. Seine drei Waveshaper lassen sich in Reihe oder parallel schalten. Jeder zeigt als Kurve an, wie er das Signal verändert.",
+	"geopolitics_title": "Process Mining für Geopolitik",
+	"geopolitics_detail": "ist eine Erweiterung, die ich für PM4Py geschrieben habe. Am Beispiel der USA und Deutschlands habe ich untersucht, welche Handlungen des einen Landes innerhalb eines gewählten Zeitraums auf Handlungen des anderen folgten.",
+	"company_projects": "Bei HumanityLink",
+	"projects": [
+		{
+			"id": "empowerlink",
+			"name": "EmpowerLink",
+			"detail": "Die ursprüngliche Kommunikationsplattform. Ich habe an den Core- und E-Mail-APIs, der EspoCRM-Erweiterung und den telefonischen Umfragen mit Twilio gearbeitet."
+		},
+		{
+			"id": "empowerlink-unified",
+			"name": "EmpowerLink Unified",
+			"detail": "Aktuell arbeite ich an einer Version, die unabhängig vom CRM läuft. PostgreSQL trennt die Daten der Organisationen über Zugriffsregeln auf Zeilenebene. Eine Outbox übergibt Aufträge an die Versandwarteschlangen."
+		},
+		{
+			"id": "share-and-listen",
+			"name": "Share & Listen",
+			"detail": "Eine monday.com-App für SMS, WhatsApp und RCS. Ein Modus führt durch einen Fragebogen. Der andere beantwortet Fragen anhand der Unterlagen der Organisation und kann das Gespräch in eine Umfrage übergeben."
+		},
+		{
+			"id": "anchor-for-farmers",
+			"name": "ANCHOR for Farmers",
+			"detail": "Das Projekt mit GOAL Honduras läuft gerade an und wird von Irish Aid gefördert. Ziel ist es, anhand von Wetter- und Satellitendaten Empfehlungen zur Aussaat auf Spanisch per WhatsApp zu verschicken."
+		}
+	],
+	"skills_heading": "Kenntnisse und Werkzeuge",
+	"tools": [
+		{
+			"label": "Sprachen und Webentwicklung",
+			"skills": "TypeScript, Python, Go (Gin, GORM), C++, Node.js, Express, React, SolidJS, SvelteKit",
+			"links": []
+		},
+		{
+			"label": "Mobile Entwicklung",
+			"skills": "React Native und Expo, Offline-Bearbeitung und Synchronisation",
+			"links": [
+				{
+					"label": "2DO",
+					"href": "https://github.com/sashamorecode/2DO/blob/master/frontend/services/sync.ts"
+				}
+			]
+		},
+		{
+			"label": "Daten und Integration",
+			"skills": "PostgreSQL, SQLite, Drizzle, Redis, Firestore, BigQuery, RabbitMQ, BullMQ, Twilio, EspoCRM, Monday.com, SendGrid",
+			"links": []
+		},
+		{
+			"label": "Process Mining",
+			"skills": "Ereignisprotokolle mit pandas und PM4Py auswerten, Aktions-Reaktions-Graphen für wählbare Zeitfenster erstellen",
+			"links": [
+				{
+					"label": "PM4Py-Extension",
+					"href": "https://github.com/sashamorecode/Geopolitics-Process-Mining/blob/main/pm4pyExtension/algo/discovery/efig.py"
+				}
+			]
+		},
+		{
+			"label": "Infrastruktur und Tests",
+			"skills": "Kubernetes, Docker, Google Cloud, Cloud Run, Terraform, Vault, Playwright, GitHub Actions",
+			"links": []
+		},
+		{
+			"label": "Maschinelles Lernen",
+			"skills": "Keras, LangChain, Google Gemini, Vertex AI, Earth Engine, ElevenLabs",
+			"links": []
+		},
+		{
+			"label": "Audio und eingebettete Systeme",
+			"skills": "Embedded C auf STM32, digitale Audiosignalverarbeitung in Echtzeit, Wavetable-Synthese, Waveshaping, JUCE, iPlug2",
+			"links": [
+				{
+					"label": "funkit-mini",
+					"href": "https://github.com/sashamorecode/funkit-mini/blob/master/Core/Src/echo.c"
+				}
+			]
+		}
+	]
+}
